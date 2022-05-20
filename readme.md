@@ -6,6 +6,8 @@
 5. Install autoptimize
 
 * checking line by 
+#Gzip enable check:
+1. https://www.giftofspeed.com/gzip-test/
 
 # checking site speed 
 1. https://pagespeed.web.dev/
