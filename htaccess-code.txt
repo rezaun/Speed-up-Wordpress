@@ -138,7 +138,56 @@ ExpiresByType font/woff2 A31557600
     ModPagespeed on
     # using commands,filters etc
 </IfModule>
+
+#this is for reduce server response time
+<IfModule pagespeed_module>
+    ModPagespeed on
+    # using commands,filters etc
+</IfModule>
+
 #this is for reduce server response time
 <ifModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
 </ifModule>
+
+<IfModule pagespeed_module>
+	ModPagespeed on
+# using commands,filters etc
+</IfModule>
+
+# BEGIN WP-Optimize Browser Cache
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType text/css "access 28 days"
+	ExpiresByType text/html "access 28 days"
+	ExpiresByType image/gif "access 28 days"
+	ExpiresByType image/png "access 28 days"
+	ExpiresByType image/jpg "access 28 days"
+	ExpiresByType image/jpeg "access 28 days"
+	ExpiresByType image/webp "access 28 days"
+	ExpiresByType image/x-icon "access 28 days"
+	ExpiresByType application/pdf "access 28 days"
+	ExpiresByType application/javascript "access 28 days"
+	ExpiresByType text/x-javascript "access 28 days"
+	ExpiresByType application/x-shockwave-flash "access 28 days"
+	ExpiresDefault "access 28 days"
+</IfModule>
+
+<IfModule mod_headers.c>
+	<filesMatch "\.(ico|jpe?g|png|gif|webp|swf)$">
+		Header set Cache-Control "public"
+	</filesMatch>
+	<filesMatch "\.(css)$">
+		Header set Cache-Control "public"
+	</filesMatch>
+	<filesMatch "\.(js)$">
+		Header set Cache-Control "private"
+	</filesMatch>
+	<filesMatch "\.(x?html?|php)$">
+		Header set Cache-Control "private, must-revalidate"
+	</filesMatch>
+</IfModule>
+
+#Disable ETag
+FileETag None
+# END WP-Optimize Browser Cache

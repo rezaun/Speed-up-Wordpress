@@ -5,6 +5,14 @@
 4. Install WP Rocket
 5. Install autoptimize
 
+## more according to need
+LazyLoad by wp rocket
+Asset CleanUp
+
+#serve images in next-gen formats
+Plugin:  https://wordpress.org/plugins/webp-express/
+
+
 * checking line by 
 #Gzip enable check:
 1. https://www.giftofspeed.com/gzip-test/
