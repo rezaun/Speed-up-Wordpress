@@ -22,5 +22,9 @@ Plugin:  https://wordpress.org/plugins/webp-express/
 2. https://gtmetrix.com/
 3. https://tools.pingdom.com/
 
+#Some plugin suggestion by Wordpress group:
+1. Nitropack, 10web, Lite Speed etc
+
+
 ** Speecial Tips: google it with the problem and apply the solution
 ======
