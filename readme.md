@@ -1,9 +1,10 @@
 ## Step for speed up wordpress site
 1. Install Regenerate Thumbnails 
 2. Install Lazy Load - Optimize Images
-3. Install WP Htaccess Editor
-4. Install WP Rocket
-5. Install autoptimize
+3. Install Litespeed Cache https://wordpress.org/plugins/litespeed-cache/
+4. Install WP Htaccess Editor
+5. Install WP Rocket
+6. Install autoptimize
 
 ## more according to need
 LazyLoad by wp rocket
